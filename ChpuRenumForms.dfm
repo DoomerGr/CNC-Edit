@@ -1,0 +1,1568 @@
+inherited FmChpuRenum: TFmChpuRenum
+  Left = 995
+  Top = 219
+  Caption = 'CNC Edit'
+  ClientHeight = 250
+  ClientWidth = 655
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyPress = FormKeyPress
+  OnShow = FormShow
+  PixelsPerInch = 101
+  TextHeight = 13
+  object RzPagCtrlRzPagCtrDopoln: TRzPageControl
+    Left = 0
+    Top = 0
+    Width = 655
+    Height = 250
+    ActivePage = RzTabShtTabSheet1
+    Align = alClient
+    Color = clAqua
+    UseColoredTabs = True
+    ParentColor = False
+    TabIndex = 0
+    TabOrder = 0
+    TabStyle = tsCutCorner
+    FixedDimension = 20
+    object RzTabShtTabSheet1: TRzTabSheet
+      Color = 16762508
+      Caption = #1055#1077#1088#1077#1085#1091#1084#1077#1088#1072#1094#1080#1103
+      object RzPanel1: TRzPanel
+        Left = 0
+        Top = 0
+        Width = 651
+        Height = 226
+        Align = alClient
+        BorderInner = fsGroove
+        BorderOuter = fsBump
+        GradientColorStyle = gcsCustom
+        GradientColorStop = 15658734
+        GradientDirection = gdDiagonalDown
+        GridColor = 12895428
+        Locked = True
+        TabOrder = 0
+        VisualStyle = vsGradient
+        WordWrap = False
+        object Lbl4: TRzLabel
+          Left = 282
+          Top = 14
+          Width = 229
+          Height = 16
+          Caption = #1055#1088#1086#1087#1091#1089#1090#1080#1090#1100' '#1089#1090#1088#1086#1082#1080' '#1085#1072#1095#1080#1085#1072#1102#1097#1080#1077#1089#1103':'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Lbl5: TRzLabel
+          Left = 282
+          Top = 69
+          Width = 216
+          Height = 16
+          Caption = #1055#1088#1086#1087#1091#1089#1090#1080#1090#1100' '#1089#1090#1088#1086#1082#1080' '#1089#1086#1076#1077#1088#1078#1072#1097#1080#1077': '
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object rzbrdr1: TRzBorder
+          Left = 281
+          Top = 131
+          Width = 359
+          Height = 79
+        end
+        object Lbl6: TRzLabel
+          Left = 12
+          Top = 19
+          Width = 133
+          Height = 16
+          Caption = #1060#1086#1088#1084#1072#1090' '#1085#1091#1084#1077#1088#1072#1094#1080#1080': '
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Lbl1: TRzLabel
+          Left = 12
+          Top = 53
+          Width = 148
+          Height = 16
+          Caption = #1054#1073#1086#1079#1085#1072#1095#1077#1085#1080#1077' '#1085#1086#1084#1077#1088#1072': '
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Lbl3: TRzLabel
+          Left = 12
+          Top = 87
+          Width = 120
+          Height = 16
+          Caption = #1053#1072#1095#1072#1090#1100' '#1089#1086' '#1089#1090#1088#1086#1082#1080': '
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Lbl7: TRzLabel
+          Left = 12
+          Top = 121
+          Width = 145
+          Height = 16
+          Caption = #1053#1072#1095#1072#1090#1100' '#1085#1091#1084#1077#1088#1072#1094#1080#1102' '#1089' : '
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Lbl2: TRzLabel
+          Left = 12
+          Top = 155
+          Width = 107
+          Height = 16
+          Caption = #1064#1072#1075' '#1085#1091#1084#1077#1088#1072#1094#1080#1080': '
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Lbl9: TRzLabel
+          Left = 12
+          Top = 189
+          Width = 156
+          Height = 16
+          Caption = #1055#1088#1086#1073#1077#1083#1099' '#1087#1086#1089#1083#1077' '#1085#1086#1084#1077#1088#1072':'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object rzvrsnfsts1: TRzVersionInfoStatus
+          Left = 510
+          Top = 186
+          Width = 153
+          FrameStyle = fsNone
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clMaroon
+          Font.Height = -10
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          ParentFont = False
+          FieldLabel = 'CNC Edit v.'
+          FieldLabelColor = clMaroon
+          Alignment = taRightJustify
+          AutoSize = True
+          Field = vifFileVersion
+          VersionInfo = RzVersInf1
+        end
+        object RzBitBtnDelNum: TRzBitBtn
+          Left = 309
+          Top = 175
+          Width = 136
+          FrameColor = 7617536
+          Caption = #1059#1076#1072#1083#1080#1090#1100' '#1085#1091#1084#1077#1088#1072#1094#1080#1102
+          Color = 15791348
+          HotTrack = True
+          TabOrder = 3
+          OnClick = RzBitBtnDelNumClick
+          Glyph.Data = {
+            36060000424D3606000000000000360400002800000020000000100000000100
+            08000000000000020000630E0000630E00000001000000000000000000003300
+            00006600000099000000CC000000FF0000000033000033330000663300009933
+            0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+            000000990000339900006699000099990000CC990000FF99000000CC000033CC
+            000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+            0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+            330000333300333333006633330099333300CC333300FF333300006633003366
+            33006666330099663300CC663300FF6633000099330033993300669933009999
+            3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+            330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+            66006600660099006600CC006600FF0066000033660033336600663366009933
+            6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+            660000996600339966006699660099996600CC996600FF99660000CC660033CC
+            660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+            6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+            990000339900333399006633990099339900CC339900FF339900006699003366
+            99006666990099669900CC669900FF6699000099990033999900669999009999
+            9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+            990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+            CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+            CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+            CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+            CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+            CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+            FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+            FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+            FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+            FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+            000000808000800000008000800080800000C0C0C00080808000191919004C4C
+            4C00B2B2B200E5E5E500C8AC2800E0CC6600F2EABF00B59B2400D8E9EC009933
+            6600D075A300ECC6D900646F710099A8AC00E2EFF10000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E86CE8E8
+            E8E8E8E8E8E8E8E8B4E8E8E8E881E8E8E8E8E8E8E8E8E8E8ACE8E8E897B46CE8
+            E8E8E8E8E8E8E8E8E8E8E8E881AC81E8E8E8E8E8E8E8E8E8E8E8E8E897C7B46C
+            E8E8E8E8E8E8E8B4E8E8E8E881E3AC81E8E8E8E8E8E8E8ACE8E8E8E8E897C090
+            E8E8E8E8E8E8B4E8E8E8E8E8E881E381E8E8E8E8E8E8ACE8E8E8E8E8E8E890B4
+            6CE8E8E8E8B46CE8E8E8E8E8E8E881AC81E8E8E8E8AC81E8E8E8E8E8E8E8E890
+            B46CE8E8B46CE8E8E8E8E8E8E8E8E881AC81E8E8AC81E8E8E8E8E8E8E8E8E8E8
+            90B46CB46CE8E8E8E8E8E8E8E8E8E8E881AC81AC81E8E8E8E8E8E8E8E8E8E8E8
+            E890B46CE8E8E8E8E8E8E8E8E8E8E8E8E881AC81E8E8E8E8E8E8E8E8E8E8E8E8
+            90B46C906CE8E8E8E8E8E8E8E8E8E8E881AC818181E8E8E8E8E8E8E8E8E8E890
+            B46CE8E8906CE8E8E8E8E8E8E8E8E881AC81E8E88181E8E8E8E8E8E8E890B4B4
+            6CE8E8E8E8906CE8E8E8E8E8E881ACAC81E8E8E8E88181E8E8E8E8E890C7B46C
+            E8E8E8E8E8E8906CE8E8E8E881E3AC81E8E8E8E8E8E88181E8E8E8E87A907AE8
+            E8E8E8E8E8E8E8E890E8E8E8AC81ACE8E8E8E8E8E8E8E8E881E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8}
+          NumGlyphs = 2
+        end
+        object RzBitBtnClose: TRzBitBtn
+          Left = 467
+          Top = 141
+          Width = 136
+          FrameColor = 7617536
+          Caption = #1047#1072#1082#1088#1099#1090#1100
+          Color = 15791348
+          HotTrack = True
+          TabOrder = 4
+          OnClick = RzBitBtnCloseClick
+          Glyph.Data = {
+            36060000424D3606000000000000360400002800000020000000100000000100
+            08000000000000020000630B0000630B00000001000000000000000000003300
+            00006600000099000000CC000000FF0000000033000033330000663300009933
+            0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+            000000990000339900006699000099990000CC990000FF99000000CC000033CC
+            000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+            0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+            330000333300333333006633330099333300CC333300FF333300006633003366
+            33006666330099663300CC663300FF6633000099330033993300669933009999
+            3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+            330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+            66006600660099006600CC006600FF0066000033660033336600663366009933
+            6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+            660000996600339966006699660099996600CC996600FF99660000CC660033CC
+            660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+            6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+            990000339900333399006633990099339900CC339900FF339900006699003366
+            99006666990099669900CC669900FF6699000099990033999900669999009999
+            9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+            990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+            CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+            CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+            CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+            CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+            CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+            FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+            FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+            FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+            FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+            000000808000800000008000800080800000C0C0C00080808000191919004C4C
+            4C00B2B2B200E5E5E500C8AC2800E0CC6600F2EABF00B59B2400D8E9EC009933
+            6600D075A300ECC6D900646F710099A8AC00E2EFF10000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8B46C6C6CE8
+            E8E8E8E8B46C6C6CE8E8E8E2DFDFDFE8E8E8E8E8E2DFDFDFE8E8E8B49090906C
+            E8E8E8B49090906CE8E8E8E2818181DFE8E8E8E2818181DFE8E8E8E8B4909090
+            6CE8B49090906CE8E8E8E8E8E2818181DFE8E2818181DFE8E8E8E8E8E8B49090
+            906C9090906CE8E8E8E8E8E8E8E2818181DF818181DFE8E8E8E8E8E8E8E8B490
+            909090906CE8E8E8E8E8E8E8E8E8E28181818181DFE8E8E8E8E8E8E8E8E8E8B4
+            9090906CE8E8E8E8E8E8E8E8E8E8E8E2818181DFE8E8E8E8E8E8E8E8E8E8B490
+            909090906CE8E8E8E8E8E8E8E8E8E28181818181DFE8E8E8E8E8E8E8E8B49090
+            906C9090906CE8E8E8E8E8E8E8E2818181DF818181DFE8E8E8E8E8E8B4909090
+            6CE8B49090906CE8E8E8E8E8E2818181DFE8E2818181DFE8E8E8E8B49090906C
+            E8E8E8B49090906CE8E8E8E2818181DFE8E8E8E2818181DFE8E8E8B4B4B4B4E8
+            E8E8E8E8B4B4B4B4E8E8E8E2E2E2E2E8E8E8E8E8E2E2E2E2E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8}
+          NumGlyphs = 2
+        end
+        object RzBitBtnRenum: TRzBitBtn
+          Left = 310
+          Top = 141
+          Width = 136
+          Default = True
+          FrameColor = 7617536
+          Caption = #1042#1099#1087#1086#1083#1085#1080#1090#1100
+          Color = 15791348
+          HotTrack = True
+          TabOrder = 2
+          OnClick = RzBitBtnRenumClick
+          Glyph.Data = {
+            36060000424D3606000000000000360400002800000020000000100000000100
+            0800000000000002000000000000000000000001000000000000000000003300
+            00006600000099000000CC000000FF0000000033000033330000663300009933
+            0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+            000000990000339900006699000099990000CC990000FF99000000CC000033CC
+            000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+            0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+            330000333300333333006633330099333300CC333300FF333300006633003366
+            33006666330099663300CC663300FF6633000099330033993300669933009999
+            3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+            330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+            66006600660099006600CC006600FF0066000033660033336600663366009933
+            6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+            660000996600339966006699660099996600CC996600FF99660000CC660033CC
+            660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+            6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+            990000339900333399006633990099339900CC339900FF339900006699003366
+            99006666990099669900CC669900FF6699000099990033999900669999009999
+            9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+            990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+            CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+            CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+            CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+            CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+            CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+            FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+            FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+            FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+            FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+            000000808000800000008000800080800000C0C0C00080808000191919004C4C
+            4C00B2B2B200E5E5E5005A1E1E00783C3C0096646400C8969600FFC8C800465F
+            82005591B9006EB9D7008CD2E600B4E6F000D8E9EC0099A8AC00646F7100E2EF
+            F100C56A31000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000EEEEEEEEEEEE
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE180C
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEE2DFEEEEEEEEEEEEEEEEEEEEEEEEEE181212
+            0CEEEEEEEEEEEEEEEEEEEEEEEEE28181DFEEEEEEEEEEEEEEEEEEEEEE18121212
+            120CEEEEEEEEEEEEEEEEEEEEE281818181DFEEEEEEEEEEEEEEEEEE1812121212
+            12120CEEEEEEEEEEEEEEEEE2818181818181DFEEEEEEEEEEEEEEEE1812120C18
+            1212120CEEEEEEEEEEEEEEE28181DFE2818181DFEEEEEEEEEEEEEE18120CEEEE
+            181212120CEEEEEEEEEEEEE281DFEEEEE2818181DFEEEEEEEEEEEE180CEEEEEE
+            EE181212120CEEEEEEEEEEE2DFEEEEEEEEE2818181DFEEEEEEEEEEEEEEEEEEEE
+            EEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEEEEEE
+            EEEEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEEEE
+            EEEEEEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEE
+            EEEEEEEEEE1812120CEEEEEEEEEEEEEEEEEEEEEEEEE28181DFEEEEEEEEEEEEEE
+            EEEEEEEEEEEE18120CEEEEEEEEEEEEEEEEEEEEEEEEEEE281DFEEEEEEEEEEEEEE
+            EEEEEEEEEEEEEE180CEEEEEEEEEEEEEEEEEEEEEEEEEEEEE2DFEEEEEEEEEEEEEE
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE}
+          NumGlyphs = 2
+        end
+        object RzEditPropInStr: TRzEdit
+          Left = 281
+          Top = 88
+          Width = 360
+          Height = 24
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          ParentFont = False
+          TabOrder = 1
+        end
+        object RzEditPropStr1: TRzEdit
+          Left = 282
+          Top = 33
+          Width = 360
+          Height = 24
+          Text = '%,;'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = [fsBold]
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          MaxLength = 55
+          ParentFont = False
+          TabOnEnter = True
+          TabOrder = 0
+        end
+        object RzComBoxFormatNom: TRzComboBox
+          Left = 171
+          Top = 15
+          Width = 100
+          Height = 24
+          AllowEdit = False
+          Ctl3D = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          ItemHeight = 16
+          ParentCtl3D = False
+          ParentFont = False
+          TabOnEnter = True
+          TabOrder = 5
+          Text = '0'
+          Items.Strings = (
+            '0'
+            '00'
+            '000'
+            '0000'
+            '00000'
+            '000000'
+            '0000000'
+            '00000000'
+            '000000000')
+          ItemIndex = 0
+          Values.Strings = (
+            ''
+            ''
+            ''
+            ''
+            ''
+            ''
+            ''
+            ''
+            '')
+        end
+        object RzEditSim_Nom: TRzEdit
+          Left = 171
+          Top = 49
+          Width = 100
+          Height = 24
+          Text = 'N'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          ParentFont = False
+          TabOrder = 6
+        end
+        object RzNEditStartNStr: TRzNumericEdit
+          Left = 171
+          Top = 83
+          Width = 100
+          Height = 24
+          Alignment = taLeftJustify
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          ParentFont = False
+          TabOrder = 7
+          CheckRange = True
+          Max = 1000000000.000000000000000000
+          Min = 1.000000000000000000
+          DisplayFormat = ',0;(,0)'
+          Value = 1.000000000000000000
+        end
+        object RzNEditStartNum: TRzNumericEdit
+          Left = 171
+          Top = 117
+          Width = 100
+          Height = 24
+          Alignment = taLeftJustify
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          ParentFont = False
+          TabOrder = 8
+          Max = 1000000000.000000000000000000
+          Min = 1.000000000000000000
+          DisplayFormat = ',0;(,0)'
+          Value = 1.000000000000000000
+        end
+        object RzNEditShag: TRzNumericEdit
+          Left = 171
+          Top = 151
+          Width = 83
+          Height = 24
+          Alignment = taLeftJustify
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          ParentFont = False
+          TabOrder = 9
+          Max = 100.000000000000000000
+          Min = 1.000000000000000000
+          DisplayFormat = ',0;(,0)'
+          Value = 1.000000000000000000
+        end
+        object RzSpnBtnShag: TRzSpinButtons
+          Left = 255
+          Top = 150
+          Width = 16
+          Height = 25
+          FocusControl = RzNEditShag
+          OnDownLeftClick = RzSpnBtnShagDownLeftClick
+          OnUpRightClick = RzSpnBtnShagUpRightClick
+          TabOrder = 10
+        end
+        object RzSpnBtnProbel: TRzSpinButtons
+          Left = 255
+          Top = 185
+          Width = 16
+          Height = 25
+          FocusControl = RzNEditNProbel
+          OnDownLeftClick = RzSpnBtnProbelDownLeftClick
+          OnUpRightClick = RzSpnBtnProbelUpRightClick
+          TabOrder = 11
+        end
+        object RzNEditNProbel: TRzNumericEdit
+          Left = 171
+          Top = 185
+          Width = 83
+          Height = 24
+          Alignment = taLeftJustify
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          ParentFont = False
+          TabOrder = 12
+          Max = 100.000000000000000000
+          DisplayFormat = ',0;(,0)'
+          Value = 1.000000000000000000
+        end
+      end
+    end
+    object RzTabShtTabSheet4: TRzTabSheet
+      Color = clLime
+      Caption = #1055#1088#1086#1073#1077#1083#1099
+      object RzPanel4: TRzPanel
+        Left = 0
+        Top = 0
+        Width = 651
+        Height = 226
+        Align = alClient
+        BorderOuter = fsNone
+        GradientDirection = gdDiagonalUp
+        TabOrder = 0
+        VisualStyle = vsGradient
+        object RzBox3: TRzGroupBox
+          Left = 13
+          Top = 12
+          Width = 623
+          Height = 118
+          Caption = #1056#1072#1089#1089#1090#1072#1085#1086#1074#1082#1072' '#1087#1088#1086#1073#1077#1083#1086#1074' '#1084#1077#1078#1076#1091' '#1089#1083#1086#1074#1072#1084#1080
+          GradientColorStyle = gcsCustom
+          GroupStyle = gsStandard
+          TabOrder = 0
+          Transparent = True
+          VisualStyle = vsClassic
+          object Lbl17: TRzLabel
+            Left = 9
+            Top = 33
+            Width = 120
+            Height = 16
+            Caption = #1053#1072#1095#1072#1090#1100' '#1089#1086' '#1089#1090#1088#1086#1082#1080': '
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Lbl22: TRzLabel
+            Left = 9
+            Top = 85
+            Width = 145
+            Height = 16
+            Caption = #1050#1086#1083#1080#1095#1077#1089#1090#1074#1086' '#1087#1088#1086#1073#1077#1083#1086#1074
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Lbl19: TRzLabel
+            Left = 280
+            Top = 62
+            Width = 292
+            Height = 16
+            Caption = #1055#1088#1086#1087#1091#1089#1090#1080#1090#1100' '#1079#1072#1082#1083#1102#1095#1077#1085#1085#1099#1077' '#1084#1077#1078#1076#1091' '#1089#1080#1084#1074#1086#1083#1072#1084#1080
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Lbl18: TRzLabel
+            Left = 280
+            Top = 10
+            Width = 229
+            Height = 16
+            Caption = #1055#1088#1086#1087#1091#1089#1090#1080#1090#1100' '#1089#1090#1088#1086#1082#1080' '#1085#1072#1095#1080#1085#1072#1102#1097#1080#1077#1089#1103':'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Lbl16: TRzLabel
+            Left = 280
+            Top = 84
+            Width = 30
+            Height = 16
+            Caption = 'Sim1'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Lbl20: TRzLabel
+            Left = 455
+            Top = 84
+            Width = 30
+            Height = 16
+            Caption = 'Sim2'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object RzNEditStartStrProbel: TRzNumericEdit
+            Left = 159
+            Top = 29
+            Width = 100
+            Height = 24
+            Alignment = taLeftJustify
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            FrameVisible = True
+            FramingPreference = fpCustomFraming
+            ParentFont = False
+            TabOrder = 0
+            CheckRange = True
+            Max = 1000000000.000000000000000000
+            Min = 1.000000000000000000
+            DisplayFormat = ',0;(,0)'
+            Value = 1.000000000000000000
+          end
+          object RzNEditProbel_N: TRzNumericEdit
+            Left = 159
+            Top = 81
+            Width = 83
+            Height = 24
+            Alignment = taLeftJustify
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            FrameVisible = True
+            FramingPreference = fpCustomFraming
+            ParentFont = False
+            TabOrder = 1
+            Max = 100.000000000000000000
+            DisplayFormat = ',0;(,0)'
+            Value = 1.000000000000000000
+          end
+          object RzSpnBtnNProbel: TRzSpinButtons
+            Left = 242
+            Top = 80
+            Width = 16
+            Height = 25
+            FocusControl = RzNEditProbel_N
+            OnDownLeftClick = RzSpnBtnNProbelDownLeftClick
+            OnUpRightClick = RzSpnBtnNProbelUpRightClick
+            TabOrder = 2
+          end
+          object RzEditProbProp1Sim: TRzEdit
+            Left = 316
+            Top = 81
+            Width = 131
+            Height = 24
+            Text = '(,",'#39',{'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            FrameVisible = True
+            FramingPreference = fpCustomFraming
+            ParentFont = False
+            TabOrder = 3
+          end
+          object RzEditProbProp2Sim: TRzEdit
+            Left = 489
+            Top = 81
+            Width = 123
+            Height = 24
+            Text = '),",'#39',}'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            FrameVisible = True
+            FramingPreference = fpCustomFraming
+            ParentFont = False
+            TabOrder = 4
+          end
+          object RzEditProbPropStr: TRzEdit
+            Left = 279
+            Top = 29
+            Width = 333
+            Height = 24
+            Text = '%,;'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = [fsBold]
+            FrameVisible = True
+            FramingPreference = fpCustomFraming
+            MaxLength = 55
+            ParentFont = False
+            TabOnEnter = True
+            TabOrder = 5
+          end
+        end
+        object RzBox4: TRzGroupBox
+          Left = 13
+          Top = 142
+          Width = 623
+          Height = 72
+          GradientColorStyle = gcsCustom
+          GroupStyle = gsStandard
+          TabOrder = 1
+          Transparent = True
+          VisualStyle = vsClassic
+          object RzBitBtnInsProbelRun: TRzBitBtn
+            Left = 23
+            Top = 28
+            Width = 136
+            Default = True
+            FrameColor = 7617536
+            Caption = #1042#1099#1087#1086#1083#1085#1080#1090#1100
+            Color = 15791348
+            HotTrack = True
+            TabOrder = 0
+            OnClick = RzBitBtnInsProbelRunClick
+            Glyph.Data = {
+              36060000424D3606000000000000360400002800000020000000100000000100
+              0800000000000002000000000000000000000001000000000000000000003300
+              00006600000099000000CC000000FF0000000033000033330000663300009933
+              0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+              000000990000339900006699000099990000CC990000FF99000000CC000033CC
+              000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+              0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+              330000333300333333006633330099333300CC333300FF333300006633003366
+              33006666330099663300CC663300FF6633000099330033993300669933009999
+              3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+              330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+              66006600660099006600CC006600FF0066000033660033336600663366009933
+              6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+              660000996600339966006699660099996600CC996600FF99660000CC660033CC
+              660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+              6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+              990000339900333399006633990099339900CC339900FF339900006699003366
+              99006666990099669900CC669900FF6699000099990033999900669999009999
+              9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+              990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+              CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+              CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+              CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+              CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+              CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+              FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+              FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+              FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+              FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+              000000808000800000008000800080800000C0C0C00080808000191919004C4C
+              4C00B2B2B200E5E5E5005A1E1E00783C3C0096646400C8969600FFC8C800465F
+              82005591B9006EB9D7008CD2E600B4E6F000D8E9EC0099A8AC00646F7100E2EF
+              F100C56A31000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000EEEEEEEEEEEE
+              EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+              EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE180C
+              EEEEEEEEEEEEEEEEEEEEEEEEEEEEE2DFEEEEEEEEEEEEEEEEEEEEEEEEEE181212
+              0CEEEEEEEEEEEEEEEEEEEEEEEEE28181DFEEEEEEEEEEEEEEEEEEEEEE18121212
+              120CEEEEEEEEEEEEEEEEEEEEE281818181DFEEEEEEEEEEEEEEEEEE1812121212
+              12120CEEEEEEEEEEEEEEEEE2818181818181DFEEEEEEEEEEEEEEEE1812120C18
+              1212120CEEEEEEEEEEEEEEE28181DFE2818181DFEEEEEEEEEEEEEE18120CEEEE
+              181212120CEEEEEEEEEEEEE281DFEEEEE2818181DFEEEEEEEEEEEE180CEEEEEE
+              EE181212120CEEEEEEEEEEE2DFEEEEEEEEE2818181DFEEEEEEEEEEEEEEEEEEEE
+              EEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEEEEEE
+              EEEEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEEEE
+              EEEEEEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEE
+              EEEEEEEEEE1812120CEEEEEEEEEEEEEEEEEEEEEEEEE28181DFEEEEEEEEEEEEEE
+              EEEEEEEEEEEE18120CEEEEEEEEEEEEEEEEEEEEEEEEEEE281DFEEEEEEEEEEEEEE
+              EEEEEEEEEEEEEE180CEEEEEEEEEEEEEEEEEEEEEEEEEEEEE2DFEEEEEEEEEEEEEE
+              EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE}
+            NumGlyphs = 2
+          end
+          object RzBitBtnDelProbelRun: TRzBitBtn
+            Left = 235
+            Top = 28
+            Width = 136
+            FrameColor = 7617536
+            Caption = #1059#1076#1072#1083#1080#1090#1100' '#1087#1088#1086#1073#1077#1083#1099
+            Color = 15791348
+            HotTrack = True
+            TabOrder = 1
+            OnClick = RzBitBtnInsProbelRunClick
+            Glyph.Data = {
+              36060000424D3606000000000000360400002800000020000000100000000100
+              08000000000000020000630E0000630E00000001000000000000000000003300
+              00006600000099000000CC000000FF0000000033000033330000663300009933
+              0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+              000000990000339900006699000099990000CC990000FF99000000CC000033CC
+              000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+              0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+              330000333300333333006633330099333300CC333300FF333300006633003366
+              33006666330099663300CC663300FF6633000099330033993300669933009999
+              3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+              330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+              66006600660099006600CC006600FF0066000033660033336600663366009933
+              6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+              660000996600339966006699660099996600CC996600FF99660000CC660033CC
+              660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+              6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+              990000339900333399006633990099339900CC339900FF339900006699003366
+              99006666990099669900CC669900FF6699000099990033999900669999009999
+              9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+              990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+              CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+              CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+              CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+              CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+              CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+              FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+              FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+              FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+              FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+              000000808000800000008000800080800000C0C0C00080808000191919004C4C
+              4C00B2B2B200E5E5E500C8AC2800E0CC6600F2EABF00B59B2400D8E9EC009933
+              6600D075A300ECC6D900646F710099A8AC00E2EFF10000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000E8E8E8E8E8E8
+              E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E86CE8E8
+              E8E8E8E8E8E8E8E8B4E8E8E8E881E8E8E8E8E8E8E8E8E8E8ACE8E8E897B46CE8
+              E8E8E8E8E8E8E8E8E8E8E8E881AC81E8E8E8E8E8E8E8E8E8E8E8E8E897C7B46C
+              E8E8E8E8E8E8E8B4E8E8E8E881E3AC81E8E8E8E8E8E8E8ACE8E8E8E8E897C090
+              E8E8E8E8E8E8B4E8E8E8E8E8E881E381E8E8E8E8E8E8ACE8E8E8E8E8E8E890B4
+              6CE8E8E8E8B46CE8E8E8E8E8E8E881AC81E8E8E8E8AC81E8E8E8E8E8E8E8E890
+              B46CE8E8B46CE8E8E8E8E8E8E8E8E881AC81E8E8AC81E8E8E8E8E8E8E8E8E8E8
+              90B46CB46CE8E8E8E8E8E8E8E8E8E8E881AC81AC81E8E8E8E8E8E8E8E8E8E8E8
+              E890B46CE8E8E8E8E8E8E8E8E8E8E8E8E881AC81E8E8E8E8E8E8E8E8E8E8E8E8
+              90B46C906CE8E8E8E8E8E8E8E8E8E8E881AC818181E8E8E8E8E8E8E8E8E8E890
+              B46CE8E8906CE8E8E8E8E8E8E8E8E881AC81E8E88181E8E8E8E8E8E8E890B4B4
+              6CE8E8E8E8906CE8E8E8E8E8E881ACAC81E8E8E8E88181E8E8E8E8E890C7B46C
+              E8E8E8E8E8E8906CE8E8E8E881E3AC81E8E8E8E8E8E88181E8E8E8E87A907AE8
+              E8E8E8E8E8E8E8E890E8E8E8AC81ACE8E8E8E8E8E8E8E8E881E8E8E8E8E8E8E8
+              E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+              E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8}
+            NumGlyphs = 2
+          end
+          object RzBitBtnCloseProbel: TRzBitBtn
+            Left = 455
+            Top = 28
+            Width = 136
+            FrameColor = 7617536
+            Caption = #1047#1072#1082#1088#1099#1090#1100
+            Color = 15791348
+            HotTrack = True
+            TabOrder = 2
+            OnClick = RzBitBtnCloseClick
+            Glyph.Data = {
+              36060000424D3606000000000000360400002800000020000000100000000100
+              08000000000000020000630B0000630B00000001000000000000000000003300
+              00006600000099000000CC000000FF0000000033000033330000663300009933
+              0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+              000000990000339900006699000099990000CC990000FF99000000CC000033CC
+              000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+              0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+              330000333300333333006633330099333300CC333300FF333300006633003366
+              33006666330099663300CC663300FF6633000099330033993300669933009999
+              3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+              330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+              66006600660099006600CC006600FF0066000033660033336600663366009933
+              6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+              660000996600339966006699660099996600CC996600FF99660000CC660033CC
+              660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+              6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+              990000339900333399006633990099339900CC339900FF339900006699003366
+              99006666990099669900CC669900FF6699000099990033999900669999009999
+              9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+              990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+              CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+              CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+              CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+              CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+              CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+              FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+              FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+              FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+              FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+              000000808000800000008000800080800000C0C0C00080808000191919004C4C
+              4C00B2B2B200E5E5E500C8AC2800E0CC6600F2EABF00B59B2400D8E9EC009933
+              6600D075A300ECC6D900646F710099A8AC00E2EFF10000000000000000000000
+              0000000000000000000000000000000000000000000000000000000000000000
+              0000000000000000000000000000000000000000000000000000E8E8E8E8E8E8
+              E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+              E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+              E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8B46C6C6CE8
+              E8E8E8E8B46C6C6CE8E8E8E2DFDFDFE8E8E8E8E8E2DFDFDFE8E8E8B49090906C
+              E8E8E8B49090906CE8E8E8E2818181DFE8E8E8E2818181DFE8E8E8E8B4909090
+              6CE8B49090906CE8E8E8E8E8E2818181DFE8E2818181DFE8E8E8E8E8E8B49090
+              906C9090906CE8E8E8E8E8E8E8E2818181DF818181DFE8E8E8E8E8E8E8E8B490
+              909090906CE8E8E8E8E8E8E8E8E8E28181818181DFE8E8E8E8E8E8E8E8E8E8B4
+              9090906CE8E8E8E8E8E8E8E8E8E8E8E2818181DFE8E8E8E8E8E8E8E8E8E8B490
+              909090906CE8E8E8E8E8E8E8E8E8E28181818181DFE8E8E8E8E8E8E8E8B49090
+              906C9090906CE8E8E8E8E8E8E8E2818181DF818181DFE8E8E8E8E8E8B4909090
+              6CE8B49090906CE8E8E8E8E8E2818181DFE8E2818181DFE8E8E8E8B49090906C
+              E8E8E8B49090906CE8E8E8E2818181DFE8E8E8E2818181DFE8E8E8B4B4B4B4E8
+              E8E8E8E8B4B4B4B4E8E8E8E2E2E2E2E8E8E8E8E8E2E2E2E2E8E8E8E8E8E8E8E8
+              E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+              E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8}
+            NumGlyphs = 2
+          end
+        end
+      end
+    end
+    object RzTabShtTabSheet2: TRzTabSheet
+      Color = 8437759
+      Caption = #1057#1090#1088#1086#1082#1080
+      object RzPanel2: TRzPanel
+        Left = 0
+        Top = 0
+        Width = 651
+        Height = 226
+        Align = alClient
+        BorderOuter = fsNone
+        GradientDirection = gdHorizontalCenter
+        TabOrder = 0
+        TabStop = True
+        VisualStyle = vsGradient
+        object Lbl8: TRzLabel
+          Left = 15
+          Top = 5
+          Width = 96
+          Height = 16
+          Caption = #1057#1090#1088#1086#1082#1072' '#1087#1086#1080#1089#1082#1072
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Lbl13: TRzLabel
+          Left = 10
+          Top = 57
+          Width = 68
+          Height = 16
+          Caption = #1054#1087#1077#1088#1072#1094#1080#1103':'
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+        end
+        object Lbl14: TRzLabel
+          Left = 332
+          Top = 57
+          Width = 16
+          Height = 16
+          Caption = #1085#1072
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -13
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          Transparent = True
+          Visible = False
+        end
+        object RzEditStrTextPos: TRzEdit
+          Left = 10
+          Top = 24
+          Width = 630
+          Height = 24
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FrameHotStyle = fsFlat
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          ParentFont = False
+          TabOrder = 0
+        end
+        object RzMemoAddStr: TRzMemo
+          Left = 8
+          Top = 85
+          Width = 632
+          Height = 96
+          BevelInner = bvNone
+          BevelOuter = bvNone
+          Enabled = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -14
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          ParentFont = False
+          ScrollBars = ssVertical
+          TabOrder = 1
+          DisabledColor = 16514043
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+        end
+        object RzBitBtnStrRun: TRzBitBtn
+          Left = 168
+          Top = 187
+          Width = 136
+          Default = True
+          FrameColor = 7617536
+          Caption = #1042#1099#1087#1086#1083#1085#1080#1090#1100
+          Color = 15791348
+          HotTrack = True
+          TabOrder = 2
+          OnClick = RzBitBtnStrRunClick
+          Glyph.Data = {
+            36060000424D3606000000000000360400002800000020000000100000000100
+            0800000000000002000000000000000000000001000000000000000000003300
+            00006600000099000000CC000000FF0000000033000033330000663300009933
+            0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+            000000990000339900006699000099990000CC990000FF99000000CC000033CC
+            000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+            0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+            330000333300333333006633330099333300CC333300FF333300006633003366
+            33006666330099663300CC663300FF6633000099330033993300669933009999
+            3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+            330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+            66006600660099006600CC006600FF0066000033660033336600663366009933
+            6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+            660000996600339966006699660099996600CC996600FF99660000CC660033CC
+            660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+            6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+            990000339900333399006633990099339900CC339900FF339900006699003366
+            99006666990099669900CC669900FF6699000099990033999900669999009999
+            9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+            990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+            CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+            CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+            CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+            CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+            CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+            FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+            FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+            FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+            FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+            000000808000800000008000800080800000C0C0C00080808000191919004C4C
+            4C00B2B2B200E5E5E5005A1E1E00783C3C0096646400C8969600FFC8C800465F
+            82005591B9006EB9D7008CD2E600B4E6F000D8E9EC0099A8AC00646F7100E2EF
+            F100C56A31000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000EEEEEEEEEEEE
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE180C
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEE2DFEEEEEEEEEEEEEEEEEEEEEEEEEE181212
+            0CEEEEEEEEEEEEEEEEEEEEEEEEE28181DFEEEEEEEEEEEEEEEEEEEEEE18121212
+            120CEEEEEEEEEEEEEEEEEEEEE281818181DFEEEEEEEEEEEEEEEEEE1812121212
+            12120CEEEEEEEEEEEEEEEEE2818181818181DFEEEEEEEEEEEEEEEE1812120C18
+            1212120CEEEEEEEEEEEEEEE28181DFE2818181DFEEEEEEEEEEEEEE18120CEEEE
+            181212120CEEEEEEEEEEEEE281DFEEEEE2818181DFEEEEEEEEEEEE180CEEEEEE
+            EE181212120CEEEEEEEEEEE2DFEEEEEEEEE2818181DFEEEEEEEEEEEEEEEEEEEE
+            EEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEEEEEE
+            EEEEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEEEE
+            EEEEEEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEE
+            EEEEEEEEEE1812120CEEEEEEEEEEEEEEEEEEEEEEEEE28181DFEEEEEEEEEEEEEE
+            EEEEEEEEEEEE18120CEEEEEEEEEEEEEEEEEEEEEEEEEEE281DFEEEEEEEEEEEEEE
+            EEEEEEEEEEEEEE180CEEEEEEEEEEEEEEEEEEEEEEEEEEEEE2DFEEEEEEEEEEEEEE
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE}
+          NumGlyphs = 2
+        end
+        object RzBitBtn2: TRzBitBtn
+          Left = 345
+          Top = 187
+          Width = 136
+          FrameColor = 7617536
+          Caption = #1047#1072#1082#1088#1099#1090#1100
+          Color = 15791348
+          HotTrack = True
+          TabOrder = 3
+          OnClick = RzBitBtnCloseClick
+          Glyph.Data = {
+            36060000424D3606000000000000360400002800000020000000100000000100
+            08000000000000020000630B0000630B00000001000000000000000000003300
+            00006600000099000000CC000000FF0000000033000033330000663300009933
+            0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+            000000990000339900006699000099990000CC990000FF99000000CC000033CC
+            000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+            0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+            330000333300333333006633330099333300CC333300FF333300006633003366
+            33006666330099663300CC663300FF6633000099330033993300669933009999
+            3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+            330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+            66006600660099006600CC006600FF0066000033660033336600663366009933
+            6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+            660000996600339966006699660099996600CC996600FF99660000CC660033CC
+            660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+            6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+            990000339900333399006633990099339900CC339900FF339900006699003366
+            99006666990099669900CC669900FF6699000099990033999900669999009999
+            9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+            990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+            CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+            CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+            CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+            CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+            CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+            FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+            FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+            FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+            FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+            000000808000800000008000800080800000C0C0C00080808000191919004C4C
+            4C00B2B2B200E5E5E500C8AC2800E0CC6600F2EABF00B59B2400D8E9EC009933
+            6600D075A300ECC6D900646F710099A8AC00E2EFF10000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8B46C6C6CE8
+            E8E8E8E8B46C6C6CE8E8E8E2DFDFDFE8E8E8E8E8E2DFDFDFE8E8E8B49090906C
+            E8E8E8B49090906CE8E8E8E2818181DFE8E8E8E2818181DFE8E8E8E8B4909090
+            6CE8B49090906CE8E8E8E8E8E2818181DFE8E2818181DFE8E8E8E8E8E8B49090
+            906C9090906CE8E8E8E8E8E8E8E2818181DF818181DFE8E8E8E8E8E8E8E8B490
+            909090906CE8E8E8E8E8E8E8E8E8E28181818181DFE8E8E8E8E8E8E8E8E8E8B4
+            9090906CE8E8E8E8E8E8E8E8E8E8E8E2818181DFE8E8E8E8E8E8E8E8E8E8B490
+            909090906CE8E8E8E8E8E8E8E8E8E28181818181DFE8E8E8E8E8E8E8E8B49090
+            906C9090906CE8E8E8E8E8E8E8E2818181DF818181DFE8E8E8E8E8E8B4909090
+            6CE8B49090906CE8E8E8E8E8E2818181DFE8E2818181DFE8E8E8E8B49090906C
+            E8E8E8B49090906CE8E8E8E2818181DFE8E8E8E2818181DFE8E8E8B4B4B4B4E8
+            E8E8E8E8B4B4B4B4E8E8E8E2E2E2E2E8E8E8E8E8E2E2E2E2E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8}
+          NumGlyphs = 2
+        end
+        object RzComBoxDopOperac: TRzComboBox
+          Left = 87
+          Top = 53
+          Width = 230
+          Height = 24
+          AllowEdit = False
+          Ctl3D = False
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -15
+          Font.Name = 'MS Sans Serif'
+          Font.Style = []
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          ItemHeight = 16
+          ParentCtl3D = False
+          ParentFont = False
+          ReadOnlyColor = clWhite
+          TabOnEnter = True
+          TabOrder = 4
+          Text = #1059#1076#1072#1083#1080#1090#1100' '#1089#1090#1088#1086#1082#1091
+          OnChange = RzComBoxDopOperacChange
+          Items.Strings = (
+            #1059#1076#1072#1083#1080#1090#1100' '#1089#1090#1088#1086#1082#1091
+            #1047#1072#1084#1077#1085#1080#1090#1100' '#1089#1090#1088#1086#1082#1091
+            #1042#1089#1090#1072#1074#1080#1090#1100' '#1082#1086#1085#1090#1077#1082#1089#1090
+            #1042#1089#1090#1072#1074#1080#1090#1100' '#1085#1080#1078#1077' '#1089#1090#1088#1086#1082#1080' '#1087#1086#1080#1089#1082#1072
+            #1042#1089#1090#1072#1074#1080#1090#1100' '#1074#1099#1096#1077' '#1089#1090#1088#1086#1082#1080' '#1087#1086#1080#1089#1082#1072)
+          ItemIndex = 0
+          Values.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5')
+        end
+        object RzSpnEdtPropStr: TRzSpinEdit
+          Left = 363
+          Top = 55
+          Width = 47
+          Height = 21
+          Max = 100.000000000000000000
+          FrameVisible = True
+          FramingPreference = fpCustomFraming
+          TabOrder = 5
+          Visible = False
+        end
+      end
+    end
+    object RzTabShtTabSheet3: TRzTabSheet
+      Color = 11075583
+      Caption = #1050#1086#1088#1088#1077#1082#1094#1080#1103' '#1079#1085#1072#1095#1077#1085#1080#1081
+      object RzPanel3: TRzPanel
+        Left = 0
+        Top = 0
+        Width = 651
+        Height = 226
+        Align = alClient
+        BorderOuter = fsNone
+        Color = 16382457
+        GradientColorStyle = gcsMSOffice
+        GradientDirection = gdDiagonalUp
+        TabOrder = 0
+        VisualStyle = vsClassic
+        object RzBox1: TRzGroupBox
+          Left = 13
+          Top = 109
+          Width = 430
+          Height = 99
+          Caption = #1055#1072#1088#1072#1084#1077#1090#1088#1099' '#1080#1079#1084#1077#1085#1077#1085#1080#1081
+          GradientColorStyle = gcsCustom
+          GroupStyle = gsStandard
+          TabOrder = 0
+          Transparent = True
+          VisualStyle = vsClassic
+          object Lbl11: TRzLabel
+            Left = 31
+            Top = 62
+            Width = 23
+            Height = 16
+            Caption = #1074' %'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Lbl12: TRzLabel
+            Left = 32
+            Top = 27
+            Width = 16
+            Height = 16
+            Caption = #1085#1072
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object RzSpnKorProc: TRzSpinner
+            Left = 69
+            Top = 60
+            Width = 80
+            Min = -100
+            ParentColor = False
+            TabOrder = 1
+          end
+          object RzNEditKorNa: TRzNumericEdit
+            Left = 70
+            Top = 25
+            Width = 80
+            Height = 21
+            Alignment = taCenter
+            FrameStyle = fsGroove
+            FrameVisible = True
+            FramingPreference = fpCustomFraming
+            TabOrder = 0
+            CheckRange = True
+            IntegersOnly = False
+            Max = 999999.000000000000000000
+            Min = -999999.000000000000000000
+            DisplayFormat = ',0.000'
+          end
+          object RzRadBtnKorProc: TRzRadioButton
+            Left = 190
+            Top = 61
+            Width = 99
+            Height = 18
+            Caption = #1074' '#1087#1088#1086#1094#1077#1085#1090#1072#1093
+            FrameColor = 8409372
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            HighlightColor = 2203937
+            HotTrack = True
+            ParentFont = False
+            TabOrder = 3
+            Transparent = True
+          end
+          object RzRadBtnKorNa: TRzRadioButton
+            Left = 189
+            Top = 26
+            Width = 183
+            Height = 18
+            Caption = #1091#1074#1077#1083#1080#1095#1080#1090#1100'/'#1091#1084#1077#1085#1100#1096#1080#1090#1100' '#1085#1072
+            Checked = True
+            FrameColor = 8409372
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -14
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            HighlightColor = 2203937
+            HotTrack = True
+            ParentFont = False
+            TabOrder = 2
+            TabStop = True
+            Transparent = True
+          end
+        end
+        object RzBitBtnKorAdrRun: TRzBitBtn
+          Left = 477
+          Top = 34
+          Width = 136
+          Default = True
+          FrameColor = 7617536
+          Caption = #1042#1099#1087#1086#1083#1085#1080#1090#1100
+          Color = 15791348
+          HotTrack = True
+          TabOrder = 2
+          OnClick = RzBitBtnKorAdrRunClick
+          Glyph.Data = {
+            36060000424D3606000000000000360400002800000020000000100000000100
+            0800000000000002000000000000000000000001000000000000000000003300
+            00006600000099000000CC000000FF0000000033000033330000663300009933
+            0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+            000000990000339900006699000099990000CC990000FF99000000CC000033CC
+            000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+            0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+            330000333300333333006633330099333300CC333300FF333300006633003366
+            33006666330099663300CC663300FF6633000099330033993300669933009999
+            3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+            330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+            66006600660099006600CC006600FF0066000033660033336600663366009933
+            6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+            660000996600339966006699660099996600CC996600FF99660000CC660033CC
+            660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+            6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+            990000339900333399006633990099339900CC339900FF339900006699003366
+            99006666990099669900CC669900FF6699000099990033999900669999009999
+            9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+            990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+            CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+            CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+            CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+            CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+            CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+            FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+            FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+            FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+            FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+            000000808000800000008000800080800000C0C0C00080808000191919004C4C
+            4C00B2B2B200E5E5E5005A1E1E00783C3C0096646400C8969600FFC8C800465F
+            82005591B9006EB9D7008CD2E600B4E6F000D8E9EC0099A8AC00646F7100E2EF
+            F100C56A31000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000EEEEEEEEEEEE
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE180C
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEE2DFEEEEEEEEEEEEEEEEEEEEEEEEEE181212
+            0CEEEEEEEEEEEEEEEEEEEEEEEEE28181DFEEEEEEEEEEEEEEEEEEEEEE18121212
+            120CEEEEEEEEEEEEEEEEEEEEE281818181DFEEEEEEEEEEEEEEEEEE1812121212
+            12120CEEEEEEEEEEEEEEEEE2818181818181DFEEEEEEEEEEEEEEEE1812120C18
+            1212120CEEEEEEEEEEEEEEE28181DFE2818181DFEEEEEEEEEEEEEE18120CEEEE
+            181212120CEEEEEEEEEEEEE281DFEEEEE2818181DFEEEEEEEEEEEE180CEEEEEE
+            EE181212120CEEEEEEEEEEE2DFEEEEEEEEE2818181DFEEEEEEEEEEEEEEEEEEEE
+            EEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEEEEEE
+            EEEEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEEEE
+            EEEEEEEE181212120CEEEEEEEEEEEEEEEEEEEEEEE2818181DFEEEEEEEEEEEEEE
+            EEEEEEEEEE1812120CEEEEEEEEEEEEEEEEEEEEEEEEE28181DFEEEEEEEEEEEEEE
+            EEEEEEEEEEEE18120CEEEEEEEEEEEEEEEEEEEEEEEEEEE281DFEEEEEEEEEEEEEE
+            EEEEEEEEEEEEEE180CEEEEEEEEEEEEEEEEEEEEEEEEEEEEE2DFEEEEEEEEEEEEEE
+            EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE}
+          NumGlyphs = 2
+        end
+        object RzBitBtnKorZnClose: TRzBitBtn
+          Left = 477
+          Top = 72
+          Width = 136
+          FrameColor = 7617536
+          Caption = #1047#1072#1082#1088#1099#1090#1100
+          Color = 15791348
+          HotTrack = True
+          TabOrder = 3
+          OnClick = RzBitBtnCloseClick
+          Glyph.Data = {
+            36060000424D3606000000000000360400002800000020000000100000000100
+            08000000000000020000630B0000630B00000001000000000000000000003300
+            00006600000099000000CC000000FF0000000033000033330000663300009933
+            0000CC330000FF33000000660000336600006666000099660000CC660000FF66
+            000000990000339900006699000099990000CC990000FF99000000CC000033CC
+            000066CC000099CC0000CCCC0000FFCC000000FF000033FF000066FF000099FF
+            0000CCFF0000FFFF000000003300330033006600330099003300CC003300FF00
+            330000333300333333006633330099333300CC333300FF333300006633003366
+            33006666330099663300CC663300FF6633000099330033993300669933009999
+            3300CC993300FF99330000CC330033CC330066CC330099CC3300CCCC3300FFCC
+            330000FF330033FF330066FF330099FF3300CCFF3300FFFF3300000066003300
+            66006600660099006600CC006600FF0066000033660033336600663366009933
+            6600CC336600FF33660000666600336666006666660099666600CC666600FF66
+            660000996600339966006699660099996600CC996600FF99660000CC660033CC
+            660066CC660099CC6600CCCC6600FFCC660000FF660033FF660066FF660099FF
+            6600CCFF6600FFFF660000009900330099006600990099009900CC009900FF00
+            990000339900333399006633990099339900CC339900FF339900006699003366
+            99006666990099669900CC669900FF6699000099990033999900669999009999
+            9900CC999900FF99990000CC990033CC990066CC990099CC9900CCCC9900FFCC
+            990000FF990033FF990066FF990099FF9900CCFF9900FFFF99000000CC003300
+            CC006600CC009900CC00CC00CC00FF00CC000033CC003333CC006633CC009933
+            CC00CC33CC00FF33CC000066CC003366CC006666CC009966CC00CC66CC00FF66
+            CC000099CC003399CC006699CC009999CC00CC99CC00FF99CC0000CCCC0033CC
+            CC0066CCCC0099CCCC00CCCCCC00FFCCCC0000FFCC0033FFCC0066FFCC0099FF
+            CC00CCFFCC00FFFFCC000000FF003300FF006600FF009900FF00CC00FF00FF00
+            FF000033FF003333FF006633FF009933FF00CC33FF00FF33FF000066FF003366
+            FF006666FF009966FF00CC66FF00FF66FF000099FF003399FF006699FF009999
+            FF00CC99FF00FF99FF0000CCFF0033CCFF0066CCFF0099CCFF00CCCCFF00FFCC
+            FF0000FFFF0033FFFF0066FFFF0099FFFF00CCFFFF00FFFFFF00000080000080
+            000000808000800000008000800080800000C0C0C00080808000191919004C4C
+            4C00B2B2B200E5E5E500C8AC2800E0CC6600F2EABF00B59B2400D8E9EC009933
+            6600D075A300ECC6D900646F710099A8AC00E2EFF10000000000000000000000
+            0000000000000000000000000000000000000000000000000000000000000000
+            0000000000000000000000000000000000000000000000000000E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8B46C6C6CE8
+            E8E8E8E8B46C6C6CE8E8E8E2DFDFDFE8E8E8E8E8E2DFDFDFE8E8E8B49090906C
+            E8E8E8B49090906CE8E8E8E2818181DFE8E8E8E2818181DFE8E8E8E8B4909090
+            6CE8B49090906CE8E8E8E8E8E2818181DFE8E2818181DFE8E8E8E8E8E8B49090
+            906C9090906CE8E8E8E8E8E8E8E2818181DF818181DFE8E8E8E8E8E8E8E8B490
+            909090906CE8E8E8E8E8E8E8E8E8E28181818181DFE8E8E8E8E8E8E8E8E8E8B4
+            9090906CE8E8E8E8E8E8E8E8E8E8E8E2818181DFE8E8E8E8E8E8E8E8E8E8B490
+            909090906CE8E8E8E8E8E8E8E8E8E28181818181DFE8E8E8E8E8E8E8E8B49090
+            906C9090906CE8E8E8E8E8E8E8E2818181DF818181DFE8E8E8E8E8E8B4909090
+            6CE8B49090906CE8E8E8E8E8E2818181DFE8E2818181DFE8E8E8E8B49090906C
+            E8E8E8B49090906CE8E8E8E2818181DFE8E8E8E2818181DFE8E8E8B4B4B4B4E8
+            E8E8E8E8B4B4B4B4E8E8E8E2E2E2E2E8E8E8E8E8E2E2E2E2E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8
+            E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8E8}
+          NumGlyphs = 2
+        end
+        object RzBox2: TRzGroupBox
+          Left = 15
+          Top = 15
+          Width = 429
+          Height = 77
+          Caption = #1040#1076#1088#1077#1089' '#1076#1083#1103' '#1082#1086#1088#1088#1077#1082#1094#1080#1080
+          GradientColorStyle = gcsCustom
+          GroupStyle = gsStandard
+          TabOrder = 1
+          Transparent = True
+          VisualStyle = vsClassic
+          object Lbl10: TRzLabel
+            Left = 8
+            Top = 20
+            Width = 182
+            Height = 16
+            Caption = #1048#1079#1084#1077#1085#1080#1090#1100' '#1079#1085#1072#1095#1077#1085#1080#1077' '#1072#1076#1088#1077#1089#1072
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object Lbl15: TRzLabel
+            Left = 8
+            Top = 52
+            Width = 189
+            Height = 16
+            Caption = #1063#1080#1089#1083#1086' '#1079#1085#1072#1082#1086#1074' '#1087#1086#1089#1083#1077' '#1079#1072#1087#1103#1090#1086#1081
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Height = -13
+            Font.Name = 'MS Sans Serif'
+            Font.Style = []
+            ParentFont = False
+            Transparent = True
+          end
+          object TRzEditKorAdr: TRzEdit
+            Left = 205
+            Top = 19
+            Width = 60
+            Height = 21
+            Text = 'X'
+            Alignment = taCenter
+            FrameVisible = True
+            FramingPreference = fpCustomFraming
+            TabOrder = 0
+          end
+          object RzCheckBoxRound: TRzCheckBox
+            Left = 282
+            Top = 22
+            Width = 122
+            Height = 15
+            Caption = #1054#1082#1088#1091#1075#1083#1080#1090#1100' '#1079#1085#1072#1095#1077#1085#1080#1077
+            State = cbUnchecked
+            TabOrder = 1
+            Transparent = True
+          end
+          object RzSpnNZnak: TRzSpinner
+            Left = 205
+            Top = 48
+            Width = 60
+            CheckRange = True
+            Max = 8
+            Value = 3
+            ParentColor = False
+            TabOrder = 2
+          end
+        end
+      end
+    end
+  end
+  object RzVersInf1: TRzVersionInfo
+    Left = 562
+    Top = 80
+  end
+end

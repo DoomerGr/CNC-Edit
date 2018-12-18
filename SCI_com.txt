@@ -1,0 +1,88 @@
+
+
+//  SendMessage(self.Npp.NppData.ScintillaMainHandle, SCI_GETTEXT, 0, LPARAM(PInteger(pp)));
+
+
+// очистить текст
+//  SendMessage(self.Npp.NppData.ScintillaMainHandle, SCI_CLEARALL, 0, 0);
+
+//кол-во символов текста
+//pp:=SendMessage(self.Npp.NppData.ScintillaMainHandle, SCI_GETTEXTLENGTH, 0, 0);
+
+//кол-во символов текста
+//pp:=SendMessage(self.Npp.NppData.ScintillaMainHandle, SCI_GETLENGTH, 0, 0);
+
+//получить позицию курсора в тексте +LF и CR
+//pp:=SendMessage(self.Npp.NppData.ScintillaMainHandle, SCI_GETCURRENTPOS, 0, 0);
+
+//установить курсор в нужную позицию
+//pp:=SendMessage(self.Npp.NppData.ScintillaMainHandle,  SCI_GOTOPOS, LPARAM(PInteger(p)),0);
+
+//получить символ из нужной позиции
+//   sim:=chr(SendMessage(self.Npp.NppData.ScintillaMainHandle,  SCI_GETCHARAT, p,0));
+
+//заменяет весь текст текстом из SS
+//  SendMessage(self.Npp.NppData.ScintillaMainHandle,SCI_SETTEXT, 0,LPARAM(PChar(ss)));
+
+// Сообщает компоненту Scintilla, что текущее состояние документа не менялось.
+// SendMessage(self.Npp.NppData.ScintillaMainHandle,SCI_SETSAVEPOINT, 0,0);
+
+//Этим можно выполнить любую команду Notepad++, вписав вместо n её номер.Номера команд можно
+//посмотреть в xml-ках локализации (Notepad++\localization)
+// SendMessage(Npp.NppData.NppHandle, NPPM_MENUCOMMAND, 0, n);
+
+
+//Текущее выделение текста между якорем и текущей позицией заменяется текстовой строкой с
+//заканчивающим нулём. Если положение якоря и текущее положение равны, текст вставляется в
+//позицию курсора. Курсор располагается после вставленного текста и текст прокручивается,
+//чтобы вставленный текст оказался в поле зрения.
+//SendMessage(Npp.NppData.ScintillaMainHandle, SCI_REPLACESEL, 0, LPARAM(PChar(ss)));
+
+
+//Получить строку под номером р в buf
+//p:=StrToInt(Rz4.Text);
+//pp:=  SendMessage(Npp.NppData.ScintillaMainHandle, SCI_LINELENGTH, p,0);
+//SetLength(buf,pp);
+//pp:=SendMessage(Npp.NppData.ScintillaMainHandle, SCI_GETLINE, p,LPARAM(PChar(buf)));
+//i:=SendMessage(self.Npp.NppData.ScintillaMainHandle, SCI_GETCURRENTPOS, 0, 0);//i скоре всего длина строки
+//Rz5.Text:=inttostr(i)+' '+inttostr(pp)+' '+Utf8ToAnsi(buf);
+
+
+
+//Получить число строк в документе
+//p:=SendMessage(Npp.NppData.ScintillaMainHandle, SCI_GETLINECOUNT,0,0);
+
+//Вставить строку SS в позицию p
+//p:=StrToInt(Rz4.Text);
+//SendMessage(Npp.NppData.ScintillaMainHandle, SCI_INSERTTEXT,p,LPARAM(PChar(AnsiToUtf8(SS))));
+
+
+
+//   Rz3.Text:=IntToStr(p);
+
+
+{
+// Docking code calls this when the form is hidden by either "x" or self.Hide
+procedure TFmChpuRenum.FormHide(Sender: TObject);
+begin
+  inherited;
+  //SendMessage(self.Npp.NppData.NppHandle, NPPM_SETMENUITEMCHECK, self.CmdID, 0);
+end;
+
+procedure TFmChpuRenum.FormDock(Sender: TObject);
+begin
+   inherited;
+//  SendMessage(self.Npp.NppData.NppHandle, NPPM_SETMENUITEMCHECK, self.CmdID, 1);
+end;
+
+procedure TFmChpuRenum.FormFloat(Sender: TObject);
+begin
+   inherited;
+//  SendMessage(self.Npp.NppData.NppHandle, NPPM_SETMENUITEMCHECK, self.CmdID, 1);
+end;
+
+procedure TFmChpuRenum.FormShow(Sender: TObject);
+begin
+  inherited;
+//  SendMessage(self.Npp.NppData.NppHandle, NPPM_SETMENUITEMCHECK, self.CmdID, 1);
+end;}
