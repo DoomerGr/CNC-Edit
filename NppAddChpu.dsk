@@ -1,19 +1,43 @@
 [Closed Files]
-File_0=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\ChpuRenumForms.pas',0,1,629,60,667,1,1
+File_0=SourceModule,'C:\Program Files (x86)\Borland\FastReport4\LibD7\frxRes.pas',0,1,262,40,281,0,0
 File_1=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\lib\nppplugin.pas',0,1,66,1,78,0,0
-File_2=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\UprPreviewPageSettings.pas',0,1,241,1,244,1,0
-File_3=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\NppChpuPrint.pas',0,1,1,1,1,1,0
-File_4=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\AboutChpu.pas',0,1,15,14,27,1,0
-File_5=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\ChpuPlugin.pas',0,1,1,42,16,0,0
-File_6=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\lib\NppPluginInclude.pas',0,1,1,1,1,0,0
-File_7=SourceModule,'c:\program files (x86)\borland\delphi7se\source\rtl\common\classes.pas',0,1,5358,48,5371,0,0
-File_8=SourceModule,'c:\program files (x86)\borland\delphi7se\source\vcl\Controls.pas',0,1,4691,1,4706,0,0
+File_2=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\AboutChpu.pas',0,1,15,14,27,1,0
+File_3=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\ChpuPlugin.pas',0,1,1,42,16,0,0
+File_4=SourceModule,'C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\lib\NppPluginInclude.pas',0,1,1,1,1,0,0
+File_5=SourceModule,'c:\program files (x86)\borland\delphi7se\source\rtl\common\classes.pas',0,1,5358,48,5371,0,0
+File_6=SourceModule,'c:\program files (x86)\borland\delphi7se\source\vcl\Controls.pas',0,1,4691,1,4706,0,0
 
 [Modules]
-Count=0
-EditWindowCount=0
+Module0=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\ChpuRenumForms.pas
+Module1=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\lib\NppForms.pas
+Module2=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\NppChpuPrint.pas
+Module3=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\NppAddChpu.dpr
+Module4=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\UprPreviewPageSettings.pas
+Count=5
+EditWindowCount=1
+
+[C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\ChpuRenumForms.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\lib\NppForms.pas]
+ModuleType=SourceModule
+FormState=1
+FormOnTop=0
+
+[C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\NppChpuPrint.pas]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
 
 [C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\NppAddChpu.dpr]
+ModuleType=SourceModule
+FormState=0
+FormOnTop=0
+
+[C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\UprPreviewPageSettings.pas]
+ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
@@ -21,17 +45,81 @@ FormOnTop=0
 FormState=0
 FormOnTop=0
 
-[C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\lib\NppForms.pas]
-FormState=0
-FormOnTop=0
+[EditWindow0]
+ViewCount=5
+CurrentView=1
+View0=0
+View1=1
+View2=2
+View3=3
+View4=4
+CodeExplorer=CodeExplorer@EditWindow0
+MessageView=MessageView@EditWindow0
+Create=1
+Visible=1
+State=2
+Left=261
+Top=137
+Width=1659
+Height=886
+MaxLeft=-8
+MaxTop=-8
+MaxWidth=1936
+MaxHeight=1054
+ClientWidth=1920
+ClientHeight=1014
+LeftPanelSize=231
+LeftPanelClients=PropertyInspector,ObjectTree
+LeftPanelData=0000040000000000E7000000000000000238030000000000000100000001000000000000000002000000001D010000000000000200000000B50200000000000002000000005F0300000000000002000000005F030000000000000100000001E7000000000000000200000000B00100001100000050726F7065727479496E73706563746F720200000000380300000E0000004F626A6563745472656556696577FFFFFFFF
+RightPanelSize=282
+RightPanelClients=CodeExplorer@EditWindow0,MessageView@EditWindow0
+RightPanelData=00000400010000000C000000436F64654578706C6F7265723803000000000000011A010000000000000100000002380300000000000002000000004A0000000000000002000000001A0100000B0000004D657373616765566965770100000000F803000000000000FFFFFFFF
+BottomPanelSize=187
+BottomPanelClients=WatchWindow
+BottomPanelData=0000040000000000800700000000000002BB0000000000000001000000010000000000000000020000000080070000000000000200000000C900000000000000010000000090060000000000000100000000800700000B000000576174636857696E646F77FFFFFFFF
+
+[View0]
+Module=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\NppAddChpu.dpr
+CursorX=1
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View1]
+Module=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\ChpuRenumForms.pas
+CursorX=90
+CursorY=156
+TopLine=146
+LeftCol=1
+
+[View2]
+Module=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\lib\NppForms.pas
+CursorX=29
+CursorY=75
+TopLine=59
+LeftCol=1
+
+[View3]
+Module=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\NppChpuPrint.pas
+CursorX=19
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View4]
+Module=C:\Program Files (x86)\Borland\Delphi7SE\Projects\NotepadPlugin\UprPreviewPageSettings.pas
+CursorX=28
+CursorY=127
+TopLine=108
+LeftCol=1
 
 [Watches]
 Count=12
-Watch0='ProbProp1Sim',1,0,18,1,1,'Watches'
-Watch1='ProbProp2Sim',1,0,18,1,1,'Watches'
-Watch2='buf',1,0,18,1,1,'Watches'
+Watch0='PathIni',32,0,18,1,1,'Watches'
+Watch1='Result',32,0,18,1,1,'Watches'
+Watch2='varname',32,0,18,1,1,'Watches'
 Watch3='result',1,0,18,1,1,'Watches'
-Watch4='s',32,0,18,1,1,'Watches'
+Watch4='i',2,0,18,1,1,'Watches'
 Watch5='st',32,0,18,1,1,'Watches'
 Watch6='IndN',2,0,18,1,1,'Watches'
 Watch7='buf',1,0,18,1,1,'Watches'
@@ -44,12 +132,12 @@ Watch11='i',2,0,18,1,1,'Watches'
 WatchColumnWidth=100
 WatchShowColumnHeaders=1
 Create=1
-Visible=0
+Visible=1
 State=0
-Left=0
-Top=1038
-Width=1908
-Height=227
+Left=12
+Top=0
+Width=1892
+Height=187
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=1892
@@ -69,7 +157,7 @@ Create=1
 Visible=1
 State=0
 Left=0
-Top=0
+Top=-130
 Width=1920
 Height=130
 MaxLeft=-1
@@ -125,12 +213,12 @@ ClientHeight=60
 
 [PropertyInspector]
 Create=1
-Visible=0
+Visible=1
 State=0
 Left=0
-Top=24
-Width=247
-Height=456
+Top=12
+Width=231
+Height=416
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=231
@@ -140,7 +228,7 @@ LRDockWidth=231
 Dockable=1
 SplitPos=127
 ArrangeBy=Name
-SelectedItem=
+SelectedItem=OnShow
 ExpandedItems=OptionsEx
 HiddenCategories=
 
@@ -168,12 +256,12 @@ Column5Width=75
 
 [ObjectTree]
 Create=1
-Visible=0
+Visible=1
 State=0
 Left=0
-Top=1038
-Width=247
-Height=277
+Top=444
+Width=231
+Height=237
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=231
@@ -196,6 +284,38 @@ ClientWidth=401
 ClientHeight=251
 TBDockHeight=291
 LRDockWidth=417
+Dockable=1
+
+[CodeExplorer@EditWindow0]
+Create=1
+Visible=0
+State=0
+Left=0
+Top=12
+Width=70
+Height=1004
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=70
+ClientHeight=1004
+TBDockHeight=1004
+LRDockWidth=70
+Dockable=1
+
+[MessageView@EditWindow0]
+Create=1
+Visible=1
+State=0
+Left=0
+Top=12
+Width=282
+Height=812
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=282
+ClientHeight=812
+TBDockHeight=812
+LRDockWidth=282
 Dockable=1
 
 [DockHosts]

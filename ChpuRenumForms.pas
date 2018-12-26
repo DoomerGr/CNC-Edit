@@ -6,7 +6,7 @@ uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, NppForms, StdCtrls, NppPlugin, Mask, RzEdit, RzCmboBx,
   scisupport,RzLabel, RzBorder, RzButton, ExtCtrls, RzPanel, RzSpnEdt,
-  RzTabs, RzRadChk, RzLstBox, RzStatus;
+  IniFiles,RzTabs, RzRadChk, RzLstBox, RzStatus;
 
 
 type
@@ -91,11 +91,6 @@ type
     rzvrsnfsts1: TRzVersionInfoStatus;
     RzVersInf1: TRzVersionInfo;
     procedure FormCreate(Sender: TObject);
-{    procedure FormKeyPress(Sender: TObject; var Key: Char);
-    procedure FormHide(Sender: TObject);
-    procedure FormFloat(Sender: TObject);
-    procedure FormDock(Sender: TObject);
-    procedure FormShow(Sender: TObject);}
     procedure RzBitBtnRenumClick(Sender: TObject);
     procedure RzBitBtnCloseClick(Sender: TObject);
     procedure RzBitBtnDelNumClick(Sender: TObject);
@@ -113,12 +108,16 @@ type
     procedure RzSpnBtnNProbelUpRightClick(Sender: TObject);
     function  LoadArrayTxt(St:string):TArrayTxt;
     function  LoadArrayChar(St:string):TArrayChar;
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+
   private
     { Private declarations }
+    sIniFile:TIniFile;
   public
     { Public declarations }
    SimSet_Lat:SimSet;
    SimSet_Cifr,SimSet_all:SimSet;
+   PathINI:string;
   end;
 
 var
@@ -130,19 +129,34 @@ uses AboutChpu;
 
 {$R *.dfm}
 
+function GetDOSEnvVar(const VarName: string): string;
+var
+  i: integer;
+begin
+  Result := '';
+  try
+    i := GetEnvironmentVariable(PChar(VarName), nil, 0);
+    if i > 0 then
+      begin
+        SetLength(Result, i-1);
+        GetEnvironmentVariable(Pchar(VarName), PChar(Result), i);
+      end;
+  except
+    Result := '';
+  end;
+end;
+
+
+
+
 procedure TFmChpuRenum.FormCreate(Sender: TObject);
 begin
   self.KeyPreview := true; // special hack for input forms
-{  self.NppDefaultDockingMask := DWS_DF_FLOATING; // whats the default docking position
-
-  self.OnFloat := self.FormFloat;
-  self.OnDock := self.FormDock;
-  self.Width:=648;}
-
   inherited;
-  SimSet_Lat:=['a'..'z']+['A'..'Z','=','"','_'];SimSet_Cifr:=['0'..'9','+','-','.',','];
+  SimSet_Lat:=['a'..'z']+['A'..'Z','=','"','_'];SimSet_Cifr:=['0'..'9','+','-','.',',','#'];
   SimSet_all:=['!'..'~'];
-  DecimalSeparator := '.'
+  PathINI:=GetDOSEnvVar('APPDATA')+'\Notepad++\plugins\config\NppChpu.ini';
+  DecimalSeparator := '.';
 end;
 
 
@@ -299,9 +313,33 @@ var i,p:Integer;
   SendMessage(Npp.NppData.ScintillaMainHandle,SCI_LINESCROLL,0,TekPos);
   WorkList:='';
  end;
-procedure TFmChpuRenum.FormShow(Sender: TObject);
 
+
+procedure TFmChpuRenum.FormShow(Sender: TObject);
 begin
+  if FileExists(pathINI) then
+   begin
+    sIniFile := TIniFile.Create(pathINI);
+    FmChpuRenum.Top:=sIniFile.ReadInteger('FormPosition','fTop',0);
+    FmChpuRenum.Left:=sIniFile.ReadInteger('FormPosition', 'fLeft',0);
+    RzComBoxFormatNom.Text:=sIniFile.ReadString('Renum','FormatNom','');
+    RzEditPropStr1.Text:=sIniFile.ReadString('Renum', 'PropStr', '');
+    RzEditPropInStr.Text:=sIniFile.ReadString('Renum', 'PropInStr','');
+    RzEditSim_Nom.Text:=sIniFile.ReadString('Renum', 'Sim_Nom','');
+    RzNEditShag.IntValue:=sIniFile.ReadInteger('Renum','Shag',0);
+    RzNEditNProbel.IntValue:=sIniFile.ReadInteger('Renum','NProbel',0);
+    RzNEditStartNum.IntValue:=sIniFile.ReadInteger('Renum','StartNum',0);
+    RzNEditStartNStr.IntValue:=sIniFile.ReadInteger('Renum','StartNStr',0);
+    RzNEditStartStrProbel.IntValue:=sIniFile.ReadInteger('Space','StartStrProbel',0);
+    RzNEditProbel_N.IntValue:=sIniFile.ReadInteger('Space','Probel_N',0);
+    RzEditProbPropStr.Text:=sIniFile.ReadString('Space', 'PropStr','');
+    RzEditProbProp1Sim.Text:=sIniFile.ReadString('Space', 'Prop1Sim','');
+    RzEditProbProp2Sim.Text:=sIniFile.ReadString('Space', 'Prop2Sim','');
+    RzEditStrTextPos.Text:=sIniFile.ReadString('String', 'TextPos','');
+    RzComBoxDopOperac.Value:=sIniFile.ReadString('String', 'Operac','');
+    RzMemoAddStr.Text:=sIniFile.ReadString('String', 'AddStr','');
+    sIniFile.Free;
+   end;
   inherited;
   if RzPagCtrlRzPagCtrDopoln.Focused then RzBitBtnRenum.SetFocus;
 end;
@@ -712,6 +750,32 @@ procedure TFmChpuRenum.RzSpnBtnNProbelUpRightClick(Sender: TObject);
 begin
   inherited;
   RzNEditProbel_N.Value:=RzNEditProbel_N.intValue+1;
+end;
+
+procedure TFmChpuRenum.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  sIniFile := TIniFile.Create(pathINI);
+  sIniFile.WriteInteger('FormPosition', 'fTop', FmChpuRenum.Top);
+  sIniFile.WriteInteger('FormPosition', 'fLeft', FmChpuRenum.Left);
+  sIniFile.WriteString('Renum','FormatNom',RzComBoxFormatNom.Text);
+  sIniFile.WriteString('Renum', 'PropStr', RzEditPropStr1.Text);
+  sIniFile.WriteString('Renum', 'PropInStr', RzEditPropInStr.Text);
+  sIniFile.WriteString('Renum', 'Sim_Nom', RzEditSim_Nom.Text);
+  sIniFile.WriteInteger('Renum','Shag',RzNEditShag.IntValue);
+  sIniFile.WriteInteger('Renum','NProbel',RzNEditNProbel.IntValue);
+  sIniFile.WriteInteger('Renum','StartNum',RzNEditStartNum.IntValue);
+  sIniFile.WriteInteger('Renum','StartNStr',RzNEditStartNStr.IntValue);
+  sIniFile.WriteInteger('Space','StartStrProbel',RzNEditStartStrProbel.IntValue);
+  sIniFile.WriteInteger('Space','Probel_N',RzNEditProbel_N.IntValue);
+  sIniFile.WriteString('Space', 'PropStr', RzEditProbPropStr.Text);
+  sIniFile.WriteString('Space', 'Prop1Sim', RzEditProbProp1Sim.Text);
+  sIniFile.WriteString('Space', 'Prop2Sim', RzEditProbProp2Sim.Text);
+  sIniFile.WriteString('String', 'TextPos', RzEditStrTextPos.Text);
+  sIniFile.WriteString('String', 'Operac', RzComBoxDopOperac.Value);
+  sIniFile.WriteString('String', 'AddStr', RzMemoAddStr.Text);
+  sIniFile.Free;
+  inherited;
 end;
 
 end.

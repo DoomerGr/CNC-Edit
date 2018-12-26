@@ -5,6 +5,7 @@ inherited FmChpuRenum: TFmChpuRenum
   ClientHeight = 250
   ClientWidth = 655
   KeyPreview = True
+  OnClose = FormClose
   OnCreate = FormCreate
   OnKeyPress = FormKeyPress
   OnShow = FormShow

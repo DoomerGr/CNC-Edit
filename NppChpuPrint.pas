@@ -119,12 +119,11 @@ begin
 
 
    SL := TStringList.Create;
-   //SL.LoadFromFile('D:\2_6_1_Freza_d20.mpf');
    SL.Text:=buf;
    Page := TfrxReportPage(frxReportUprPrint.Pages[1]);
    frxReportUprPrint.ReportOptions.Name := 'ѕечать управл€ющей программы: '+Zagolovok.name;
 
-   frxReportUprPrint.ShowReport;//FmDlgRacPrint.ShowModal;
+   frxReportUprPrint.ShowReport;
    MPrevHandle:=frxReportUprPrint.Preview.Handle;
 
 end;
