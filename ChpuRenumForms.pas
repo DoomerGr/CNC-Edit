@@ -147,13 +147,11 @@ begin
 end;
 
 
-
-
 procedure TFmChpuRenum.FormCreate(Sender: TObject);
 begin
   self.KeyPreview := true; // special hack for input forms
   inherited;
-  SimSet_Lat:=['a'..'z']+['A'..'Z','=','"','_'];SimSet_Cifr:=['0'..'9','+','-','.',',','#'];
+  SimSet_Lat:=['a'..'z']+['A'..'Z','=','"','_',':'..'>'];SimSet_Cifr:=['0'..'9','+','-','.',',','#'];
   SimSet_all:=['!'..'~'];
   PathINI:=GetDOSEnvVar('APPDATA')+'\Notepad++\plugins\config\NppChpu.ini';
   DecimalSeparator := '.';
@@ -189,7 +187,7 @@ begin
    Block1:=SendMessage(Npp.NppData.ScintillaMainHandle,SCI_LINEFROMPOSITION,N1,0);
    Block2:=SendMessage(Npp.NppData.ScintillaMainHandle,SCI_LINEFROMPOSITION,N2,0);
    Block:=True;
-  end;
+  end;       
 
   if RzEditPropStr1.Text<>'' then
     SimPropBegStr:=LoadArrayTxt(RzEditPropStr1.Text);
@@ -212,19 +210,24 @@ begin
     SetLength(buf,LengthStr);
     SendMessage(Npp.NppData.ScintillaMainHandle, SCI_GETLINE, N_Line,LPARAM(PChar(buf)));
     propusk:=False;
-
+    i:=0;
     if Length(buf)<>0 then
      begin
-      if (buf[1]=#10) or (buf[1]=#13) then begin WorkList:=WorkList+buf;Continue end
-     end else Continue;
+      for p:=1 to Length(buf)-2 do if buf[p]<>Chr(32) then begin i:=1;break;end;
+      if (buf[1]=#10) or (buf[1]=#13) or (i=0) then begin WorkList:=WorkList+buf;Continue end;
+     end
+    else Continue;
 
     if Length(SimPropInStr)>0 then
       for i:=0 to Length(SimPropInStr)-1 do
         if Pos(SimPropInStr[i],buf)<>0 then propusk:=True;
 
-    if Length(SimPropBegStr)>0 then
-      for i:=0 to Length(SimPropBegStr)-1 do
-        if Pos(SimPropBegStr[i],buf)=1 then propusk:=True;
+    if (Length(SimPropBegStr)>0) and (propusk=False) then
+     begin
+       for p:=1 to Length(buf)-1 do if buf[p]<>Chr(32) then break;
+        for i:=0 to Length(SimPropBegStr)-1 do
+            if Pos(SimPropBegStr[i],buf)=p then propusk:=True;
+     end;
 
      if (N_Line>=StartNStr) and (not(propusk) and (Block2>=N_Line)) then
        begin
